@@ -15,10 +15,7 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: '6.0.x'
-      - name: list current directory
-        run: |
-          pwd
-          ls -ltr
-          dotnet --version
+      - name: Build code
+        run: dotnet build
 
 
