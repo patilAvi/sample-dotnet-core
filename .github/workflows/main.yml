@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: code checkout      
-        - uses: actions/checkout@v3
-              run: |
-                pwd
-                ls -ltr
+      - uses: actions/checkout@v3
+        run: |
+            pwd
+            ls -ltr
 
 
