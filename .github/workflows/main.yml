@@ -30,7 +30,7 @@ jobs:
           message: "GitHub build bumber ${{ github.run_number }} for ${{ github.repository }} triggered by ${{ github.actor }} is completed with ${{ needs.build.result }} status."
 
   working_with_gcp:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
