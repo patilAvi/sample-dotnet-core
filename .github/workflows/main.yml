@@ -23,7 +23,7 @@ jobs:
      - build
     steps:
       - name: notify MS teams
-        uses: patilAvi/ms-teams-notification@v1.3
+        uses: patilAvi/ms-teams-notification@v1.4
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
           message: "This is from custom action created."
