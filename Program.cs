@@ -12,7 +12,7 @@ namespace HelloWeb
             var config = new ConfigurationBuilder()
                           .AddCommandLine(args)
                           .Build();
-            var hos = new WebHostBuilder()
+            var host = new WebHostBuilder()
                         .UseKestrel()
                         .UseConfiguration(config)
                         .UseContentRoot(Directory.GetCurrentDirectory())
