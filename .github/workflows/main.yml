@@ -26,6 +26,6 @@ jobs:
         uses: patilAvi/ms-teams-notification@v1.4
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
-          message: "This is from custom action created."
+          message: "GitHub build bumber ${{ github.run_number }} for ${{ github.repository }} triggered by ${{ github.actor }} is completed with ${{ needs.build.result }} status."
      
 
